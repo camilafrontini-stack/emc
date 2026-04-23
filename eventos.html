@@ -1,0 +1,354 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eventos Escuela de Musicoterapia</title>
+    <link rel="stylesheet" href="style.css?v=1776955361">
+    <script src="https://unpkg.com/lucide@latest"></script>
+</head>
+<body>
+    <nav class="nav">
+    <a href="index.php" class="logo">
+        <img src="../upload/logo.png" alt="Logo">
+        <span>Escuela de Musicoterapia</span>
+    </a>
+
+    <div class="nav-links" id="navLinks">
+        <div class="nav-item">
+            <a href="index.php" class="nav-link ">Inicio</a>
+        </div>
+        <div class="nav-item">
+            <a href="nosotros.php" class="nav-link ">La Escuela</a>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link">Clínica <i data-lucide="chevron-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="atencion_clinica.php">Atención Clínica</a></li>
+                <li><a href="analisis.php">Análisis de la Práctica</a></li>
+            </ul>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link">Formación <i data-lucide="chevron-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="grado.php">Grado</a></li>
+                <li><a href="posgrado.php">Posgrado</a></li>
+            </ul>
+        </div>
+        <div class="nav-item">
+            <a href="#" class="nav-link">Editorial <i data-lucide="chevron-down"></i></a>
+            <ul class="dropdown-menu">
+                <li><a href="tienda.php">Tienda</a></li>
+                <li><a href="articulos.php">Biblioteca</a></li>
+            </ul>
+        </div>
+        <div class="nav-item">
+            <a href="eventos.php" class="nav-link active">Actividades</a>
+        </div>
+        <div class="nav-item">
+            <a href="noticias.php" class="nav-link ">Noticias</a>
+        </div>
+        <div class="nav-item">
+            <a href="contacto.php" class="nav-link ">Contacto</a>
+        </div>
+    </div>
+
+    <div class="nav-actions">
+        <div class="accessibility-panel" id="accPanel">
+            <button class="acc-toggle" onclick="toggleAccPanel()" title="Ajustes de lectura">
+                <i data-lucide="settings-2"></i>
+            </button>
+            <div class="acc-content" id="accContent">
+                <p class="acc-title">Ajustes de lectura</p>
+                <div class="acc-section">
+                    <span>Tamaño de texto</span>
+                    <div class="acc-buttons">
+                        <button onclick="setFontSize(1)" id="size-normal" class="active">A</button>
+                        <button onclick="setFontSize(1.2)" id="size-large">A+</button>
+                        <button onclick="setFontSize(1.5)" id="size-xl">A++</button>
+                    </div>
+                </div>
+                <div class="acc-section">
+                    <span>Modo de color</span>
+                    <div class="acc-buttons">
+                        <button onclick="setTheme('light')" id="btn-light">☀ Claro</button>
+                        <button onclick="setTheme('dark')" id="btn-dark">☾ Oscuro</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <a href="../index.php" class="btn btn-outline btn-sm">Acceder</a>
+        <button class="mobile-nav-toggle" onclick="toggleMobileMenu()" title="Menú">
+            <i data-lucide="menu"></i>
+        </button>
+    </div>
+</nav>
+
+<script src="../assets/js/main.js?v=1776955361"></script>
+    <header class="section" style="padding-bottom:20px; text-align:center;">
+        <h1 style="font-size:2.5rem; margin-bottom:10px;">Agenda de Actividades</h1>
+        <p style="color:#777;">Participa de nuestras actividades, congresos, encuentros y formaciones.</p>
+    </header>
+
+    <section class="section" style="padding-top:20px;">
+        <div class="grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); max-width: 1200px; margin: 0 auto;">
+                                            <div class="card" style="">
+                                            <div style="margin:-24px -24px 20px -24px; height: 200px; overflow: hidden; border-radius: 12px 12px 0 0;">
+                            <img src="https://res.cloudinary.com/dgkitqjti/image/upload/f_auto,q_85,w_600,c_scale/v1776466376/aasm26_y8ty7v.jpg" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:15px; gap: 10px; flex-wrap: wrap;">
+                        <div class="event-date" style="background:#f1f3f5; padding:5px 12px; border-radius:8px; text-align:center; min-width:72px;">
+                            <span style="display:block; font-size:1.4rem; font-weight:800; color:var(--primary); line-height:1;">26</span>
+                            <span style="font-size:10px; text-transform:uppercase; font-weight:700; color:var(--text-muted);">Aug</span>
+                        </div>
+                        <div style="flex:1; min-width:140px;">
+                            <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+                                                                <span class="card-tag" style="background:#1e40af; color:#ffffff;">Congreso</span>
+                                                                                                        <span class="card-tag" style="background:#2e7d4b; color:#ffffff;">Presencial</span>
+                                                            </div>
+                                                            <div style="font-size:0.8rem; color:#6b7280; margin-top:5px;">Organiza: AASM</div>
+                                                                                        <div style="font-size:0.8rem; color:#6b7280; margin-top:5px;">Horario: A definir</div>
+                                                    </div>
+                    </div>
+                    <h3 style="font-size:1.15rem; margin-bottom:12px; flex:1;">Congreso Argentino de Salud Mental</h3>
+                                        <div style="font-size:0.9rem; color:var(--text-muted); margin-bottom:10px;">
+                        <i data-lucide="map-pin" style="width:14px; vertical-align:middle;"></i> Hotel Marriot - Av. Carlos Pellegrini 551, CABA                    </div>
+                                        <div style="font-size:0.9rem; font-weight:700; color:var(--primary); margin-bottom:20px;">
+                        <i data-lucide="tag" style="width:14px; vertical-align:middle;"></i>
+                        Sin Arancel                    </div>
+                    <div style="margin-top:auto;">
+                                                    <a href="https://aasm2026.com/es/content/inscripcion_y_costos" target="_blank" class="btn btn-primary w-100">Inscribirse</a>
+                                            </div>
+                </div>
+                                <div class="card" style="">
+                                            <div style="margin:-24px -24px 20px -24px; height: 200px; overflow: hidden; border-radius: 12px 12px 0 0;">
+                            <img src="https://res.cloudinary.com/dgkitqjti/image/upload/f_auto,q_85,w_600,c_scale/v1776470694/intrumentos3_nv6tcb.jpg" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:15px; gap: 10px; flex-wrap: wrap;">
+                        <div class="event-date" style="background:#f1f3f5; padding:5px 12px; border-radius:8px; text-align:center; min-width:72px;">
+                            <span style="display:block; font-size:1.4rem; font-weight:800; color:var(--primary); line-height:1;">02</span>
+                            <span style="font-size:10px; text-transform:uppercase; font-weight:700; color:var(--text-muted);">May</span>
+                        </div>
+                        <div style="flex:1; min-width:140px;">
+                            <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+                                                                <span class="card-tag" style="background:#dc2626; color:#ffffff;">Actividad</span>
+                                                                                                        <span class="card-tag" style="background:#96b6fb; color:#ffffff;">Virtual</span>
+                                                            </div>
+                                                            <div style="font-size:0.8rem; color:#6b7280; margin-top:5px;">Organiza: Escuela de Musicoterapia</div>
+                                                                                        <div style="font-size:0.8rem; color:#6b7280; margin-top:5px;">Horario: 10:00 - 12:00</div>
+                                                    </div>
+                    </div>
+                    <h3 style="font-size:1.15rem; margin-bottom:12px; flex:1;">Análisis de la Clínica Grupal y Actualización</h3>
+                                        <div style="font-size:0.9rem; color:var(--text-muted); margin-bottom:10px;">
+                        <i data-lucide="map-pin" style="width:14px; vertical-align:middle;"></i> Google Meet                    </div>
+                                        <div style="font-size:0.9rem; font-weight:700; color:var(--primary); margin-bottom:20px;">
+                        <i data-lucide="tag" style="width:14px; vertical-align:middle;"></i>
+                        $1                    </div>
+                    <div style="margin-top:auto;">
+                                                    <a href="inscripcion.php?evento=10"  class="btn btn-primary w-100">Inscribirse</a>
+                                            </div>
+                </div>
+                                <div class="card" style="">
+                                            <div style="margin:-24px -24px 20px -24px; height: 200px; overflow: hidden; border-radius: 12px 12px 0 0;">
+                            <img src="https://res.cloudinary.com/dgkitqjti/image/upload/f_auto,q_85,w_600,c_scale/v1776443854/violencia_rqt5a3.jpg" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:15px; gap: 10px; flex-wrap: wrap;">
+                        <div class="event-date" style="background:#f1f3f5; padding:5px 12px; border-radius:8px; text-align:center; min-width:72px;">
+                            <span style="display:block; font-size:1.4rem; font-weight:800; color:var(--primary); line-height:1;">25</span>
+                            <span style="font-size:10px; text-transform:uppercase; font-weight:700; color:var(--text-muted);">Apr</span>
+                        </div>
+                        <div style="flex:1; min-width:140px;">
+                            <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+                                                                <span class="card-tag" style="background:#059669; color:#ffffff;">Seminario</span>
+                                                                                                        <span class="card-tag" style="background:#96b6fb; color:#ffffff;">Virtual</span>
+                                                            </div>
+                                                            <div style="font-size:0.8rem; color:#6b7280; margin-top:5px;">Organiza: Universidad Maimónides</div>
+                                                                                        <div style="font-size:0.8rem; color:#6b7280; margin-top:5px;">Horario: 10:00 - 13:00</div>
+                                                    </div>
+                    </div>
+                    <h3 style="font-size:1.15rem; margin-bottom:12px; flex:1;">Contribución a la NO violencia. Análisis conceptual de la Práctica.</h3>
+                                        <div style="font-size:0.9rem; color:var(--text-muted); margin-bottom:10px;">
+                        <i data-lucide="map-pin" style="width:14px; vertical-align:middle;"></i> Google Meet                    </div>
+                                        <div style="font-size:0.9rem; font-weight:700; color:var(--primary); margin-bottom:20px;">
+                        <i data-lucide="tag" style="width:14px; vertical-align:middle;"></i>
+                        Sin Arancel                    </div>
+                    <div style="margin-top:auto;">
+                                                    <a href="https://cursosyactividades.maimonides.edu/event/seminario-debate-contribucion-a-la-no-violencia-desde-un-enfoque-relacional-analisis-conceptual-de-la-practica-desde-un-enfoque-relacional-56/register" target="_blank" class="btn btn-primary w-100">Inscribirse</a>
+                                            </div>
+                </div>
+                                <div class="card" style="opacity:0.7; border:1px solid #e5e7eb;">
+                                            <div style="margin:-24px -24px 20px -24px; height: 200px; overflow: hidden; border-radius: 12px 12px 0 0;">
+                            <img src="https://res.cloudinary.com/dgkitqjti/image/upload/f_auto,q_85,w_600,c_scale/v1776466375/ruben_vlog7s.png" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:15px; gap: 10px; flex-wrap: wrap;">
+                        <div class="event-date" style="background:#f1f3f5; padding:5px 12px; border-radius:8px; text-align:center; min-width:72px;">
+                            <span style="display:block; font-size:1.4rem; font-weight:800; color:var(--primary); line-height:1;">06</span>
+                            <span style="font-size:10px; text-transform:uppercase; font-weight:700; color:var(--text-muted);">Apr</span>
+                        </div>
+                        <div style="flex:1; min-width:140px;">
+                            <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+                                                                <span class="card-tag" style="background:#059669; color:#ffffff;">Seminario</span>
+                                                                                                        <span class="card-tag" style="background:#2e7d4b; color:#ffffff;">Presencial</span>
+                                                            </div>
+                                                            <div style="font-size:0.8rem; color:#6b7280; margin-top:5px;">Organiza: Universidad Maimónides</div>
+                                                                                        <div style="font-size:0.8rem; color:#6b7280; margin-top:5px;">Horario: 18:00 - 21:00</div>
+                                                    </div>
+                    </div>
+                    <h3 style="font-size:1.15rem; margin-bottom:12px; flex:1;">Presentación Libro &quot;Diccionario de Musicoterapia&quot;</h3>
+                                        <div style="font-size:0.9rem; color:var(--text-muted); margin-bottom:10px;">
+                        <i data-lucide="map-pin" style="width:14px; vertical-align:middle;"></i> Hidalgo 775, Aula 210, CABA                    </div>
+                                        <div style="font-size:0.9rem; font-weight:700; color:var(--primary); margin-bottom:20px;">
+                        <i data-lucide="tag" style="width:14px; vertical-align:middle;"></i>
+                        Sin Arancel                    </div>
+                    <div style="margin-top:auto;">
+                                                    <div style="text-align:center; padding:10px; color:#6b7280; font-size:0.9rem;">Evento finalizado</div>
+                                            </div>
+                </div>
+                                <div class="card" style="opacity:0.7; border:1px solid #e5e7eb;">
+                                            <div style="margin:-24px -24px 20px -24px; height: 200px; overflow: hidden; border-radius: 12px 12px 0 0;">
+                            <img src="https://res.cloudinary.com/dgkitqjti/image/upload/f_auto,q_85,w_600,c_scale/v1776466375/ninez_ffo6bj.png" style="width:100%; height:100%; object-fit:cover;">
+                        </div>
+                                        <div style="display:flex; justify-content:space-between; align-items:flex-start; margin-bottom:15px; gap: 10px; flex-wrap: wrap;">
+                        <div class="event-date" style="background:#f1f3f5; padding:5px 12px; border-radius:8px; text-align:center; min-width:72px;">
+                            <span style="display:block; font-size:1.4rem; font-weight:800; color:var(--primary); line-height:1;">29</span>
+                            <span style="font-size:10px; text-transform:uppercase; font-weight:700; color:var(--text-muted);">Nov</span>
+                        </div>
+                        <div style="flex:1; min-width:140px;">
+                            <div style="display:flex; gap:8px; flex-wrap:wrap; margin-bottom:8px;">
+                                                                <span class="card-tag" style="background:#db2777; color:#ffffff;">Encuentro</span>
+                                                                                                        <span class="card-tag" style="background:#96b6fb; color:#ffffff;">Virtual</span>
+                                                            </div>
+                                                            <div style="font-size:0.8rem; color:#6b7280; margin-top:5px;">Organiza: Escuela de Musicoterapia</div>
+                                                                                        <div style="font-size:0.8rem; color:#6b7280; margin-top:5px;">Horario: 10:00 - 12:00</div>
+                                                    </div>
+                    </div>
+                    <h3 style="font-size:1.15rem; margin-bottom:12px; flex:1;">5to Sábado «Ciclos Vitales: Clínica y Transmisión» #Niñez</h3>
+                                        <div style="font-size:0.9rem; color:var(--text-muted); margin-bottom:10px;">
+                        <i data-lucide="map-pin" style="width:14px; vertical-align:middle;"></i> Google Meet                    </div>
+                                        <div style="font-size:0.9rem; font-weight:700; color:var(--primary); margin-bottom:20px;">
+                        <i data-lucide="tag" style="width:14px; vertical-align:middle;"></i>
+                        Sin Arancel                    </div>
+                    <div style="margin-top:auto;">
+                                                    <div style="text-align:center; padding:10px; color:#6b7280; font-size:0.9rem;">Evento finalizado</div>
+                                            </div>
+                </div>
+                                    </div>
+    </section>
+
+    
+<footer class="footer-mega">
+    <div class="footer-grid">
+
+        <!-- COLUMNA 1: Marca -->
+        <div class="footer-brand">
+            <img src="../upload/logo.png" alt="Escuela de Musicoterapia">
+            <h3>Escuela de Musicoterapia</h3>
+            <p>Formación profesional e investigación clínica en el campo de la salud y el sonido. Transformando la
+                representación de la Musicoterapia desde el Nuevo Paradigma.</p>
+        </div>
+
+        <!-- COLUMNA 2: Menú -->
+        <div class="footer-col">
+            <h4>Navegación</h4>
+            <ul class="footer-links">
+                <li><a href="index.php">Inicio</a></li>
+                <li><a href="nosotros.php">La Escuela</a></li>
+                <li><a href="eventos.php">Actividades</a></li>
+                <li><a href="noticias.php">Noticias</a></li>
+                <li><a href="tienda.php">Editorial</a></li>
+                <li><a href="articulos.php">Biblioteca</a></li>
+                <li><a href="contacto.php">Contacto</a></li>
+            </ul>
+        </div>
+
+        <!-- COLUMNA 3: Últimos Eventos -->
+        <div class="footer-col">
+            <h4>Próximos Eventos</h4>
+            <ul class="footer-events">
+                                            <li class="footer-event-item">
+                                <span class="footer-event-date">25 Apr</span>
+                                <a href="evento.php?id=5" class="footer-event-title">
+                                    Contribución a la NO violencia. Análisis conceptual de la Práctica.                                </a>
+                            </li>
+                                                        <li class="footer-event-item">
+                                <span class="footer-event-date">02 May</span>
+                                <a href="evento.php?id=10" class="footer-event-title">
+                                    Análisis de la Clínica Grupal y Actualización                                </a>
+                            </li>
+                                                        <li class="footer-event-item">
+                                <span class="footer-event-date">26 Aug</span>
+                                <a href="evento.php?id=2" class="footer-event-title">
+                                    Congreso Argentino de Salud Mental                                </a>
+                            </li>
+                                        </ul>
+        </div>
+
+        <!-- COLUMNA 4: Redes + Contacto -->
+        <div class="footer-col">
+            <h4>Contacto</h4>
+
+            <div class="footer-social">
+                <a href="https://facebook.com" target="_blank" title="Facebook">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z" />
+                    </svg>
+                </a>
+                <a href="https://instagram.com" target="_blank" title="Instagram">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <rect width="20" height="20" x="2" y="2" rx="5" ry="5" />
+                        <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z" />
+                        <line x1="17.5" x2="17.51" y1="6.5" y2="6.5" />
+                    </svg>
+                </a>
+                <a href="https://youtube.com" target="_blank" title="YouTube">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path
+                            d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17" />
+                        <path d="m10 15 5-3-5-3z" />
+                    </svg>
+                </a>
+                <a href="https://linkedin.com" target="_blank" title="LinkedIn">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z" />
+                        <rect width="4" height="12" x="2" y="9" />
+                        <circle cx="4" cy="4" r="2" />
+                    </svg>
+                </a>
+            </div>
+
+            <div class="footer-contact-info">
+                <div class="footer-contact-item">
+                    <i data-lucide="mail" style="width:16px; height:16px;"></i>
+                    <a href="mailto:consultas@escuelamusicoterapia.com">consultas@escuelamusicoterapia.com</a>
+                </div>
+                <div class="footer-contact-item">
+                    <i data-lucide="phone" style="width:16px; height:16px;"></i>
+                    <span>+54 11 1234 5678</span>
+                </div>
+                <div class="footer-contact-item">
+                    <i data-lucide="map-pin" style="width:16px; height:16px;"></i>
+                    <span>Buenos Aires, Argentina</span>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Barra inferior -->
+    <div class="footer-bottom">
+        <p>&copy; 2026 Escuela de Musicoterapia. Todos los derechos reservados.</p>
+        <div class="footer-bottom-links">
+            <a href="privacidad.php">Privacidad</a>
+            <a href="terminos.php">Términos</a>
+            <a href="accesibilidad.php">Accesibilidad</a>
+        </div>
+    </div>
+</footer>
+
+<script src="../assets/js/main.js?v=1776955361"></script></body>
+</html>
